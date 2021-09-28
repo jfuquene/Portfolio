@@ -6,25 +6,128 @@
         <title>John Fuquene Portfolio Website</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
-
+        <link rel="stylesheet" href="index.css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
 
     </head>
     <body>
         <header>
-            <div class="logo">
-                <img src="img/devjane.png" alt="" />
-            </div>
-            <button class="nav-toggle" aria-label="toggel navigation">
+            <!-- <div class="logo">
+                <img src="" alt="" />
+            </div> -->
+            <button class="nav-toggle" aria-label="toggle-navigation">
                 <span class="hamburger">
             </button>
             <nav class="nav">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-                    <!-- <li class="nav__item"><a href="#" class="nav__link">My Services</a></li> -->
-                    <li class="nav__item"><a href="#" class="nav__link">About me</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">My Work</a></li>
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
                 </ul>
             </nav>
         </header> 
+
+
+        <!-- Intro-->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hi, I am <strong>John Fuquene</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Full Stack Developer</p>
+            <img src="img/LinkedIn Profile pic.jpeg" alt="a picture of Jane Smith smiling" class="intro__img">
+        </section>
+
+        <!--Services-->
+        <section class="my-services" id="services">
+            <h2 class="section__title section__subtitle--services">What I do</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Design + Development</h3>
+                    <p>Utilize basic UI and UX fundamentals to create a web applications combining a mixture of HTML for the frame, CSS for the styling and JavaScript for the functionality. Focused on making the users experience as smoothly as possible.  </p>
+                </div>
+                
+                <div class="service">
+                    <h3>Ruby</h3>
+                    <p>An understanding of the fundamentals of the Ruby language to create to create modern web applications. Utilizing Ruby on Rails gives me the power to quickly generate a server and process raw incoming HTTP requests, send them to correct backend web applications, and then handle the HTTP response sent back from the application.</p>
+                </div>
+                
+                <div class="service">
+                    <h3>Javascript</h3>
+                    <p>Good understanding of the object-oriented language Javascript to allow my applications to be interactive and functional. Implement popular front-end frameworks like React to organize my code into components which allow my applications to become fast, scalable and single.</p>
+                </div>
+            </div>
+
+            <a href="#work" class="btn">My Work</a>
+        </section>
+
+
+        <!--about me -->
+        <section class="about-me" id="about">
+            <h2 class="section__title section__title--about">Who I am</h2>
+            <p class="section__subtitle section__subtitle--about">Developer Based out of Arlington, VA</p>
+            <div class="about-me__body">
+             <p>   I'm a full-stack developer, experienced in Ruby on Rails and JavaScript-based programming. Background in Cybersecurity Sales which rendered strong communication, and business skills. Through exposure to web development during previous work experience, I followed my true passion for coding and have thrived in developing apps and solving complex technical problems.</p>
+
+            <p>  Former division one athlete at the College of William and Mary where I developed a growth mindset mentality through resilience and embracing challenges as fruitful learning experiences.</p>
+            </div>
+            
+            <img src="img/Row.jpeg" alt="Jane leaning against a bus" class="about-me__img">
+        </section>
+
+        <section class="my-work" id="work">
+            <h2 class="section__title section__title--work">My work</h2>
+            <p class="section__subtitle section__subtitle--work">A selection of my work</p>
+            
+            <div class="portfolio">
+                <!-- Portfolio item 01 -->
+                <a href="portfolio-item1.html" class="portfolio__item">
+                    <img src="img/budFinder.png" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 02 -->
+                <a href="portfolioitem2.html" class="portfolio__item">
+                    <img src="img/personalDashboard.jpg" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 03 -->
+                <a href="portfolio-item3.html" class="portfolio__item">
+                    <img src="img/movieSearch.png" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 04 -->
+            
+                
+        
+            </div>
+        </section>
+
+        <footer class="footer">
+            <!-- replace with your own email address -->
+            <a href="mailto:jfuquene@email.wm.edu" class="footer__link">jfuquene@email.wm.edu</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://codepen.io">
+                        <i class="fab fa-codepen"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="http://dribbble.com">
+                        <i class="fab fa-dribbble"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/john-fuquene-7ba746188/">
+                        <i class="fab fa-linkedIn"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/jfuquene">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+         <script src="index.js"></script>
     </body>
 </html>
